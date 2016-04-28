@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "crimsontext-roman";
+  src: url('fonts/crimsontext-roman-webfont.eot');
+  src: url('fonts/crimsontext-roman-webfont.eot#iefix') format('embedded-opentype'), url('fonts/crimsontext-roman-webfont.woff') format('woff'), url('fonts/crimsontext-roman-webfont.ttf') format('truetype'), url('fonts/crimsontext-roman-webfont.svg') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "montserrat-regular";
+  src: url('fonts/montserrat-regular-webfont.eot');
+  src: url('fonts/montserrat-regular-webfont.eot#iefix') format('embedded-opentype'), url('fonts/montserrat-regular-webfont.woff') format('woff'), url('fonts/montserrat-regular-webfont.ttf') format('truetype'), url('fonts/montserrat-regular-webfont.svg') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  font-family: 'montserrat-regular';
+}
+nav.navbar-main .navbar-brand:hover {
+  opacity: 0.7;
+}
+nav.navbar-main .navbar-collapse a {
+  font-size: 14px;
+  color: #343e5c;
+  font-weight: bold;
+}
+nav.navbar-main .navbar-collapse a:hover {
+  color: #7786b2;
+}
+nav.navbar-main .navbar {
+  background-color: white;
+}
+nav.navbar-main .navbar-btn {
+  color: #343e5c;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 44%;
+  border-width: 2px;
+}
+div.postnav a {
+  font-size: 14px;
+  color: #b9bed1;
+  font-size: 11px;
+}
+div.postnav a:hover {
+  color: #343e5c;
+}
+div.postnav .search-input {
+  width: 145px;
+}
+div.postnav .search-input-control {
+  width: 110px;
+}
+div.postnav .postnav-right {
+  float: right;
+}
+div.postnav ul.postnav-list li.active a {
+  background-color: #343e5c;
+}
+@media all and (max-width: 991px) {
+  nav.navbar-main .navbar-collapse a {
+    font-size: 11px;
+  }
+  nav.navbar-main .navbar-btn {
+    border-width: 1px;
+    letter-spacing: 0px;
+  }
+}
+@media all and (max-width: 767px) {
+  nav.navbar-main .navbar-collapse a {
+    font-size: 14px;
+  }
+  nav.navbar-main .navbar-btn {
+    border-width: 2px;
+    margin-left: 14px;
+  }
+}
+@media all and (max-width: 470px) {
+  div.postnav .postnav-right {
+    float: none;
+  }
+  div.postnav .postnav-list {
+    margin-top: 5px;
+  }
+}
