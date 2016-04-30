@@ -69,6 +69,37 @@ div.postnav{
 }
 
 
+.carousel-main{
+	.item-1, .item-2, .item-3{
+		.carousel-caption{
+			.h6{
+				font-weight: bold;
+			}
+			.carousel-caption-description{
+				font-family: 'crimsontext-roman';
+			}
+			.carousel-caption-text{
+				width: 50%;
+			}
+		} 
+	}
+	.panel-footer{
+		font-family: 'crimsontext-roman';
+		font-weight: bold;
+		overflow: hidden;
+		position: relative;
+		.carousel-footer-description{
+			display: none;
+		}
+		p.active{
+			display: block;
+		}
+		p.pseudo-active{
+			display: block;
+		}
+	}
+}
+
 
 
 @media all and (max-width: 991px){
@@ -81,6 +112,7 @@ div.postnav{
 	}
 }
 
+
 @media all and (max-width: 767px){
 	nav.navbar-main .navbar-collapse a{
 		font-size: 14px;
@@ -88,6 +120,15 @@ div.postnav{
 	nav.navbar-main .navbar-btn{
 		border-width: 2px;
 		margin-left: 14px;
+	}
+
+}
+
+
+
+@media all and (max-width: 660px){
+	.carousel-caption-description{
+		display: none;
 	}
 }
 
@@ -97,5 +138,58 @@ div.postnav{
 	}
 	div.postnav .postnav-list{
 		margin-top: 5px;
+	}
+	div.carousel-main .item .btn{
+	  	padding: 1px 5px;
+  		font-size: 12px;
+  		line-height: 1.5;
+  		border-radius: 3px;
+	}
+}
+
+@media all and (min-width: 500px){
+	div.carousel-caption p.h6{
+		font-size: 18px;
+	}
+}
+
+@media all and (min-width: 660px){
+	.carousel-footer{
+		display: none;
+	}
+}
+
+
+
+@media all and (min-width: 860px){
+	div.carousel-main .item .carousel-caption{
+		top: 20px;
+		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  		display: -ms-flexbox;      /* TWEENER - IE 10 */
+  		display: -webkit-flex; 
+		display: flex;
+	}
+	div.carousel-main .item .carousel-caption-text{
+		margin-top: auto;
+		margin-bottom: auto; 
+	}
+	div.carousel-caption p.h6{
+		font-size: 34px;
+	}
+	div.carousel-main .item .btn{
+  		padding: 10px 16px;
+  		font-size: 18px;
+  		line-height: 1.3333333;
+  		border-radius: 6px;
+	}
+}
+
+@media all and (min-width: 1440px){
+	div.carousel-caption p.h6{
+		font-size: 54px;
+	}
+	.carousel-caption-description{
+		font-size: 20px;
 	}
 }
