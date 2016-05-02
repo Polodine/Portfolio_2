@@ -56,6 +56,9 @@ div.postnav .postnav-right {
 div.postnav ul.postnav-list li.active a {
   background-color: #343e5c;
 }
+.carousel-main {
+  margin-bottom: 0;
+}
 .carousel-main .item-1 .carousel-caption .h6,
 .carousel-main .item-2 .carousel-caption .h6,
 .carousel-main .item-3 .carousel-caption .h6 {
@@ -85,6 +88,66 @@ div.postnav ul.postnav-list li.active a {
 }
 .carousel-main .panel-footer p.pseudo-active {
   display: block;
+}
+.trade-container {
+  background-color: #e4e5e7;
+}
+.trade-container .trade-menu .ul-sort {
+  color: #a1a7bd;
+  margin: 15px;
+}
+.trade-container .trade-menu .ul-sort a {
+  color: black;
+}
+.trade-container .trade-menu .ul-sort .glyphicon {
+  color: white;
+}
+.trade-container .trade-menu .ul-sort ::-webkit-input-placeholder {
+  color: black;
+}
+.trade-container .trade-menu .ul-sort ::-moz-input-placeholder {
+  color: black;
+}
+.trade-container .trade-menu .ul-sort :-moz-placeholder {
+  color: black;
+}
+.trade-container .trade-menu .ul-sort :-ms-input-placeholder {
+  color: black;
+}
+.trade-container .trade-menu .ul-sort > div {
+  background-color: white;
+}
+.trade-container .trade-menu .ul-sort > div > div {
+  padding: 10px;
+}
+.trade-container .trade-menu .ul-sort > div > div:nth-child(odd) {
+  padding: 16px;
+}
+.trade-container .trade-menu .ul-sort > div > div:nth-child(2) {
+  border-right: 4px solid #e4e5e7;
+  border-left: 4px solid #e4e5e7;
+}
+.trade-container .trade-menu .ul-sort .price-form {
+  width: 50px;
+}
+.trade-container .trade-menu .ul-sort .free-shopping {
+  background-color: #00e2aa;
+  padding: 4px;
+  border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.trade-container .trade-menu .ul-sort .left-ram {
+  margin-left: 10px;
+}
+.trade-container .trade-menu .ul-sort .right-ram {
+  margin-right: 10px;
+}
+.trade-container .trade-menu .ul-sort .form-control {
+  margin-right: 5px;
+  margin-left: 5px;
 }
 @media all and (max-width: 991px) {
   nav.navbar-main .navbar-collapse a {
