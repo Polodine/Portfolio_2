@@ -149,6 +149,77 @@ div.postnav ul.postnav-list li.active a {
   margin-right: 5px;
   margin-left: 5px;
 }
+.trade-container .trade-menu .list-sale .hidden-list-group-item {
+  background-color: #f0f2f7;
+}
+.trade-container .trade-menu .list-sale .all-checked {
+  cursor: pointer;
+  color: #2754eb;
+  text-decoration: underline;
+}
+.trade-container .trade-menu .products .thumbnail {
+  padding: 15px;
+  height: 400px;
+}
+.trade-container .trade-menu .products .thumbnail img {
+  height: 65%;
+}
+.trade-container .trade-menu .products .thumbnail .thumbnail-color {
+  color: #dbdfe9;
+}
+.trade-container .trade-menu .products .thumbnail-background {
+  background-image: url('imgs/sale/product_9/low.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+footer .well {
+  background-color: #222328;
+  margin-bottom: 0;
+  color: #4a4b4f;
+}
+footer .well p {
+  font-style: italic;
+  width: 50%;
+}
+footer .well a {
+  color: #4a4b4f;
+  text-transform: none;
+}
+@media all and (min-width: 768px) and (max-width: 989px) {
+  .trade-container .trade-menu .products div.thumbnail-background {
+    background-image: url('imgs/sale/product_9/med.jpg');
+  }
+}
+@media all and (min-width: 990px) and (max-width: 1199px) {
+  .trade-container .trade-menu .products div.thumbnail-background {
+    background-image: url('imgs/sale/product_9/high.jpg');
+  }
+}
+@media all and (min-width: 1200px) {
+  .trade-container .trade-menu .products div.thumbnail-background {
+    background-image: url('imgs/sale/product_9/very_high.jpg');
+  }
+}
+@media all and (max-width: 450px) {
+  .trade-container .trade-menu .products .thumbnail {
+    height: 300px;
+  }
+  .trade-container .trade-menu .products .thumbnail h3 {
+    font-size: 14px;
+  }
+  .trade-container .trade-menu .products .thumbnail p {
+    font-size: 11px;
+  }
+  .trade-container .trade-menu .products .thumbnail img {
+    height: 50%;
+  }
+}
+@media all and (min-width: 1700px) {
+  .trade-container .trade-menu .products .thumbnail {
+    height: 500px;
+  }
+}
 @media all and (max-width: 991px) {
   nav.navbar-main .navbar-collapse a {
     font-size: 11px;
@@ -184,6 +255,14 @@ div.postnav ul.postnav-list li.active a {
     font-size: 12px;
     line-height: 1.5;
     border-radius: 3px;
+  }
+}
+@media all and (max-width: 350px) {
+  div.carousel-main .item .carousel-caption {
+    bottom: 0;
+  }
+  div.carousel-caption p.h6 {
+    font-size: 10px;
   }
 }
 @media all and (min-width: 500px) {

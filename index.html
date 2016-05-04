@@ -54,7 +54,7 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid">
+    <article class="container-fluid">
       <div class="postnav">
         <ul class="nav nav-tabs text-uppercase postnav-right">
           <li><a href="#">Support</a></li>
@@ -79,7 +79,7 @@
     <div class="container-fluid carousel-panel">
       <div class="panel paned-default carousel-main">
        <div class="carousel slide" id="carousel" data-ride="carousel">
-        <ol class="carousel-indicators">
+        <ol class="carousel-indicators hidden-xs">
           <li data-target="#carousel" data-slide-to="0" class="active"></li>
           <li data-target="#carousel" data-slide-to="1"></li>
           <li data-target="#carousel" data-slide-to="2"></li>
@@ -168,12 +168,12 @@
             <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
               <div class="form-inline text-center">
                 <div class="form-group">
-                  Keywords 
-                  <input type="text" class="form-control" placeholder="Tablet" >
+                  <label for="keywords">Keywords</label> 
+                  <input type="text" class="form-control" placeholder="Tablet" id="keywords">
                 </div>
                 <div class="form-group">
-                  Price
-                  <input type="text" class="form-control price-form" placeholder="10" >
+                  <label for="Price">Price</label>
+                  <input type="text" class="form-control price-form" placeholder="10" id="Price">
                   -
                   <input type="text" class="form-control price-form" placeholder="1000" >
                 </div>
@@ -199,11 +199,427 @@
           </div>
         </div>
         <div style="clear:both">
-          asdf
+          <div class="row">
+            <div class="col-lg-3 col-md-3 hidden-xs hidden-sm list-sale">
+              <div class="list-group" id="list-sale">
+                <a href="" class="list-group-item main-item" data-item="1">Top Sales <span class="glyphicon glyphicon-menu-right pull-right" ></span>
+                </a>
+                <a href="" class="hidden-list-group-item list-group-item" data-item="1">asdf</a>
+                <a href="" class="hidden-list-group-item list-group-item" data-item="1">asdf</a>
+                <a href="" class="hidden-list-group-item list-group-item" data-item="1">asdf</a>
+                <a href="" class="list-group-item main-item" data-item="2">Brand Focus <span class="glyphicon glyphicon-menu-right pull-right"></span>
+                </a>
+                <a href="" class="hidden-list-group-item list-group-item" data-item="2">asdf</a>
+                <a href="" class="hidden-list-group-item list-group-item" data-item="2">asdf</a>
+                <a href="" class="hidden-list-group-item list-group-item" data-item="2">asdf</a>
+                <a href="" class="list-group-item main-item" data-item="3">Hi-Tech <span class="glyphicon glyphicon-menu-right pull-right"></span>
+                </a>
+                <a href="" class="hidden-list-group-item list-group-item" data-item="3">asdf</a>
+                <a href="" class="hidden-list-group-item list-group-item" data-item="3">asdf</a>
+                <a href="" class="hidden-list-group-item list-group-item" data-item="3">asdf</a>
+                <a href="" class="list-group-item main-item" data-item="4">Home <span class="glyphicon glyphicon-menu-right pull-right"></span>
+                </a>
+                <a href="" class="hidden-list-group-item list-group-item" data-item="4">asdf</a>
+                <a href="" class="hidden-list-group-item list-group-item" data-item="4">asdf</a>
+                <a href="" class="hidden-list-group-item list-group-item" data-item="4">asdf</a>
+                <a href="" class="list-group-item main-item" data-item="5">Sale <span class="glyphicon glyphicon-menu-right pull-right"></span>
+                </a>
+                <a href="" class="hidden-list-group-item list-group-item" data-item="5">asdf</a>
+                <a href="" class="hidden-list-group-item list-group-item" data-item="5">asdf</a>
+                <a href="" class="hidden-list-group-item list-group-item" data-item="5">asdf</a>
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item">AVAILABLE</li>
+                <li class="list-group-item">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="in"> In Storage  <br>
+                    </label>
+                    <span class="badge pull-right">45</span>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="in"> In Online-Shop
+                    </label>
+                    <span class="badge pull-right">12</span>
+                  </div>
+                </li>
+                <li class="list-group-item">BRANDS <span class="pull-right all-checked">ALL</span></li>
+                <li class="list-group-item">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" checked> Apple
+                    </label>
+                    <span class="badge pull-right">32</span>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> JBL
+                    </label>
+                    <span class="badge pull-right">14</span>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Bose
+                    </label>
+                    <span class="badge pull-right">3</span>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Nest
+                    </label>
+                    <span class="badge pull-right">5</span>
+                  </div>
+                </li>
+              </ul>
+            
+            <ul class="list-group">
+              <li class="list-group-item">CONDITION <span class="pull-right all-checked">SEE ALL</span></li>
+              <li class="list-group-item">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" checked> New
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Manufacturer Refurbished
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Seller Refurbished
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" checked> Used
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> For Parts or not Working
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <div class="row products">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                  <img src="imgs/sale/product_1/low.jpg" alt="product #1"
+                  srcset="imgs/sale/product_1/low.jpg 400w,
+                  imgs/sale/product_1/med.jpg 700w,
+                  imgs/sale/product_1/high.jpg 1000w,
+                  imgs/sale/product_1/very_high.jpg 1500w"
+                  sizes="100vw" width=100%
+                  >
+                  <div class="caption text-center">
+                    <h3>Apple TV 32GB</h3>
+                    <p class="thumbnail-color">BLACK</p>
+                    <p>$49.99</p>
+                  </div>
+                </div>
+                 <div class="thumbnail">
+                  <img src="imgs/sale/product_4/low.jpg" alt="product #1"
+                  srcset="imgs/sale/product_4/low.jpg 400w,
+                  imgs/sale/product_4/med.jpg 700w,
+                  imgs/sale/product_4/high.jpg 1000w,
+                  imgs/sale/product_4/very_high.jpg 1500w"
+                  sizes="100vw" width=100%
+                  >
+                  <div class="caption text-center">
+                    <h3>Ollo Clip New</h3>
+                    <p class="text-uppercase thumbnail-color">silver</p>
+                    <p>$19.99</p>
+                  </div>
+                </div>
+                 <div class="thumbnail">
+                  <img src="imgs/sale/product_7/low.jpg" alt="product #1"
+                  srcset="imgs/sale/product_7/low.jpg 400w,
+                  imgs/sale/product_7/med.jpg 700w,
+                  imgs/sale/product_7/high.jpg 1000w,
+                  imgs/sale/product_7/very_high.jpg 1500w"
+                  sizes="100vw" width=100%
+                  >
+                  <div class="caption text-center">
+                    <h3>Bose Headphones</h3>
+                    <p class="thumbnail-color">WHITE</p>
+                    <p>$119.99</p>
+                  </div>
+                </div>
+                <div class="thumbnail hidden-lg hidden-md hidden-sm">
+                  <img src="imgs/sale/product_3/low.jpg" alt="product #1"
+                  srcset="imgs/sale/product_3/low.jpg 400w,
+                  imgs/sale/product_3/med.jpg 700w,
+                  imgs/sale/product_3/high.jpg 1000w,
+                  imgs/sale/product_3/very_high.jpg 1500w"
+                  sizes="100vw" width=100%
+                  >
+                  <div class="caption text-center">
+                    <h3>Pebble Time</h3>
+                    <p class="thumbnail-color">RED</p>
+                    <p>$29.99</p>
+                  </div>
+                </div>
+                <div class="thumbnail hidden-lg hidden-md hidden-sm thumbnail-background">
+<!--                   <img src="imgs/sale/product_9/low.jpg" alt="product #1"
+                  srcset="imgs/sale/product_9/low.jpg 400w,
+                  imgs/sale/product_9/med.jpg 700w,
+                  imgs/sale/product_9/high.jpg 1000w,
+                  imgs/sale/product_9/very_high.jpg 1500w"
+                  sizes="100vw" width=100% class="img-responsive"
+                  > -->
+                  <div class="caption text-center">
+                    <h3>Nest Learning Thermostat</h3>
+                    <p>$49.99</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                  <img src="imgs/sale/product_2/low.jpg" alt="product #1"
+                  srcset="imgs/sale/product_2/low.jpg 400w,
+                  imgs/sale/product_2/med.jpg 700w,
+                  imgs/sale/product_2/high.jpg 1000w,
+                  imgs/sale/product_2/very_high.jpg 1500w"
+                  sizes="100vw" width=100%
+                  >
+                  <div class="caption text-center">
+                    <h3>Pebble Time</h3>
+                    <p class="thumbnail-color">RED</p>
+                    <p>$29.99</p>
+                  </div>
+                </div>
+                <div class="thumbnail">
+                  <img src="imgs/sale/product_5/low.jpg" alt="product #1"
+                  srcset="imgs/sale/product_5/low.jpg 400w,
+                  imgs/sale/product_5/med.jpg 700w,
+                  imgs/sale/product_5/high.jpg 1000w,
+                  imgs/sale/product_5/very_high.jpg 1500w"
+                  sizes="100vw" width=100%
+                  >
+                  <div class="caption text-center">
+                    <h3>Fitbit Charge</h3>
+                    <p class="thumbnail-color">BLACK</p>
+                    <p>$99.99</p>
+                  </div>
+                </div>
+                <div class="thumbnail">
+                  <img src="imgs/sale/product_8/low.jpg" alt="product #1"
+                  srcset="imgs/sale/product_8/low.jpg 400w,
+                  imgs/sale/product_8/med.jpg 700w,
+                  imgs/sale/product_8/high.jpg 1000w,
+                  imgs/sale/product_8/very_high.jpg 1500w"
+                  sizes="100vw" width=100%
+                  >
+                  <div class="caption text-center">
+                    <h3>Senos Play-1</h3>
+                    <p class="thumbnail-color">BLACK</p>
+                    <p>$49.99</p>
+                  </div>
+                </div>
+                <div class="thumbnail hidden-sm hidden-lg hidden-md">
+                  <img src="imgs/sale/product_6/low.jpg" alt="product #1"
+                  srcset="imgs/sale/product_6/low.jpg 400w,
+                  imgs/sale/product_6/med.jpg 700w,
+                  imgs/sale/product_6/high.jpg 1000w,
+                  imgs/sale/product_6/very_high.jpg 1500w"
+                  sizes="100vw" width=100%
+                  >
+                  <div class="caption text-center">
+                    <h3>Apple Watch Sport</h3>
+                    <p class="thumbnail-color">WHITE</p>
+                    <p>$49.99</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+                <div class="thumbnail">
+                  <img src="imgs/sale/product_3/low.jpg" alt="product #1"
+                  srcset="imgs/sale/product_3/low.jpg 400w,
+                  imgs/sale/product_3/med.jpg 700w,
+                  imgs/sale/product_3/high.jpg 1000w,
+                  imgs/sale/product_3/very_high.jpg 1500w"
+                  sizes="100vw" width=100%
+                  >
+                  <div class="caption text-center">
+                    <h3>Zendure 4-port USB</h3>
+                    <p class="thumbnail-color">WHITE</p>
+                    <p>$49.99</p>
+                  </div>
+                </div>
+                <div class="thumbnail">
+                  <img src="imgs/sale/product_6/low.jpg" alt="product #1"
+                  srcset="imgs/sale/product_6/low.jpg 400w,
+                  imgs/sale/product_6/med.jpg 700w,
+                  imgs/sale/product_6/high.jpg 1000w,
+                  imgs/sale/product_6/very_high.jpg 1500w"
+                  sizes="100vw" width=100%
+                  >
+                  <div class="caption text-center">
+                    <h3>Apple Watch Sport</h3>
+                    <p class="thumbnail-color">WHITE</p>
+                    <p>$49.99</p>
+                  </div>
+                </div>
+                <div class="thumbnail thumbnail-background">
+<!--                   <img src="imgs/sale/product_9/low.jpg" alt="product #1"
+                  srcset="imgs/sale/product_9/low.jpg 400w,
+                  imgs/sale/product_9/med.jpg 700w,
+                  imgs/sale/product_9/high.jpg 1000w,
+                  imgs/sale/product_9/very_high.jpg 1500w"
+                  sizes="100vw" width=100% class="img-responsive"
+                  > -->
+                  <div class="caption text-center">
+                    <h3>Nest Learning Thermostat</h3>
+                    <p>$49.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="text-center" >
+            <ul class="pagination pagination-lg " >
+              <li class=""><a href="">&laquo;</a></li>
+              <li class=""><a href="">1</a></li>
+              <li class="active"><a href="">2</a></li>
+              <li class=""><a href="">3</a></li>
+              <li class=""><a href="">4</a></li>
+              <li class=""><a href="">&raquo;</a></li>
+            </ul>
+          </nav>
+          <div class="hidden-lg hidden-md list-sale list-sale-sm">
+            <div class="row">
+              <div class="col-sm-4 col-xs-12">
+                <div class="list-group" id="list-sale">
+                  <a href="" class="list-group-item main-item" data-item="1">Top Sales <span class="glyphicon glyphicon-menu-right pull-right" ></span>
+                  </a>
+                  <a href="" class="hidden-list-group-item list-group-item" data-item="1">asdf</a>
+                  <a href="" class="hidden-list-group-item list-group-item" data-item="1">asdf</a>
+                  <a href="" class="hidden-list-group-item list-group-item" data-item="1">asdf</a>
+                  <a href="" class="list-group-item main-item" data-item="2">Brand Focus <span class="glyphicon glyphicon-menu-right pull-right"></span>
+                  </a>
+                  <a href="" class="hidden-list-group-item list-group-item" data-item="2">asdf</a>
+                  <a href="" class="hidden-list-group-item list-group-item" data-item="2">asdf</a>
+                  <a href="" class="hidden-list-group-item list-group-item" data-item="2">asdf</a>
+                  <a href="" class="list-group-item main-item" data-item="3">Hi-Tech <span class="glyphicon glyphicon-menu-right pull-right"></span>
+                  </a>
+                  <a href="" class="hidden-list-group-item list-group-item" data-item="3">asdf</a>
+                  <a href="" class="hidden-list-group-item list-group-item" data-item="3">asdf</a>
+                  <a href="" class="hidden-list-group-item list-group-item" data-item="3">asdf</a>
+                  <a href="" class="list-group-item main-item" data-item="4">Home <span class="glyphicon glyphicon-menu-right pull-right"></span>
+                  </a>
+                  <a href="" class="hidden-list-group-item list-group-item" data-item="4">asdf</a>
+                  <a href="" class="hidden-list-group-item list-group-item" data-item="4">asdf</a>
+                  <a href="" class="hidden-list-group-item list-group-item" data-item="4">asdf</a>
+                  <a href="" class="list-group-item main-item" data-item="5">Sale <span class="glyphicon glyphicon-menu-right pull-right"></span>
+                  </a>
+                  <a href="" class="hidden-list-group-item list-group-item" data-item="5">asdf</a>
+                  <a href="" class="hidden-list-group-item list-group-item" data-item="5">asdf</a>
+                  <a href="" class="hidden-list-group-item list-group-item" data-item="5">asdf</a>
+                </div>
+              </div>
+              <div class="col-sm-4 col-xs-12">
+                <ul class="list-group">
+                  <li class="list-group-item">AVAILABLE</li>
+                  <li class="list-group-item">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="in" checked> In Storage  <br>
+                      </label>
+                      <span class="badge pull-right">45</span>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="in"> In Online-Shop
+                      </label>
+                      <span class="badge pull-right">12</span>
+                    </div>
+                  </li>
+                  <li class="list-group-item">BRANDS <span class="pull-right all-checked">ALL</span></li>
+                  <li class="list-group-item">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" checked> Apple
+                      </label>
+                      <span class="badge pull-right">32</span>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> JBL
+                      </label>
+                      <span class="badge pull-right">14</span>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Bose
+                      </label>
+                      <span class="badge pull-right">3</span>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Nest
+                      </label>
+                      <span class="badge pull-right">5</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            <div class="col-sm-4 col-xs-12">
+              <ul class="list-group">
+                <li class="list-group-item">CONDITION <span class="pull-right all-checked">SEE ALL</span></li>
+                <li class="list-group-item">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" checked> New
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Manufacturer Refurbished
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Seller Refurbished
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" checked> Used
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> For Parts or not Working
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </article>
+    <footer>
+      <div class="well well-lg">
+        <ul class="list-inline pull-right hidden-xs">
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms and Conditions</a></li>
+        </ul>
+        <ul class="list-inline text-center hidden-lg hidden-md hidden-sm">
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms and Conditions</a></li>
+        </ul>
+        <p class="hidden-xs">
+          She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for having been born on a Friday.
+        </p>
 
       </div>
-    </div>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
